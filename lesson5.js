@@ -5,6 +5,16 @@ var userEntry    = "TeST"
     ;  
 console.log("captcha", captchaOk)
 
+// положительные через одно
+var array  = [1, 3, 5, -4, 8, -9, -8]   
+    ,result = "" 
+    ;
+    for(i = 0; i < array.length; i ++){
+		if(!(i % 2) && array[i] > 0){ 
+			result += array[i] + ", ";
+		}
+    }
+console.log("Положительные через одно:", result);
 
 // задание 1
 var string = "test1 test2 test3"
