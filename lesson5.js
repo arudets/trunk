@@ -21,3 +21,13 @@ console.log("К-во слов в строке:", aString.length);
 console.log("К-во символов с пробелом:", string.length);
 console.log("К-во символов без пробелов:", aString.join("").length);
 console.log("Замена \"люблю\" на \"обожаю\":", string.replace("люблю", "обожаю"));
+
+// задание 3
+var string  = "иван петрович сидоров"
+    ,aString = string.split(" ")
+    ,result = "" 
+    ;
+   for(i = 0; i < aString.length; i ++){
+       result += aString[i][0].toUpperCase() + aString[i].substring(1) + " ";
+       }
+console.log("ФИО:", result);
