@@ -26,7 +26,7 @@ console.log("substring", string.substring(5, 0));
 // задание 2
 var string     = "я люблю javaScript"
     ,aString    =  string.split(" ")
-	;	
+    ;	
 console.log("К-во слов в строке:", aString.length);
 console.log("К-во символов с пробелом:", string.length);
 console.log("К-во символов без пробелов:", aString.join("").length);
