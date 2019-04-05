@@ -60,7 +60,7 @@ if (count == 3){
 else if(count == 2){
     message = "You guessed 2 digits";		
 }
-else if (count < 2){
+else {
     message = "You lose";	
 }
 console.log(message);
