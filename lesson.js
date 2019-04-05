@@ -42,10 +42,10 @@ console.log("pswd:", pswd)
 // задание 2 лотерея
 var userAnswer = "835"
     ,m         = 0
-	,n         = 9
-	,number    = ''
-	,count     = 0
-	;
+    ,n         = 9
+    ,number    = ''
+    ,count     = 0
+    ;
 	
 for(var i = 0; i < 3; i ++){
   number += Math.floor(Math.random() * (n - m + 1)) + m + '';	
