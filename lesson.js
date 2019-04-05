@@ -77,6 +77,6 @@ var holidayCalendar = {
 	      + "/"
 	      + today.getFullYear()
     ,message = ""
-	;
+    ;
 message = holidayCalendar[stoday]? holidayCalendar[stoday] : "No Holiday";	  
 console.log(message);
