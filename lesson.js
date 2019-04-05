@@ -38,3 +38,32 @@ for(var i = 0; i < pswdLength; i ++){
 }
 
 console.log("pswd:", pswd)
+
+// задание 2 лотерея
+var userAnswer = "835"
+    ,m         = 0
+	,n         = 9
+	,number    = ''
+	,count     = 0
+	;
+	
+for(var i = 0; i < 3; i ++){
+  number += Math.floor(Math.random() * (n - m + 1)) + m + '';	
+}
+
+for(var j = 0; j < 3; j ++){
+  if(userAnswer.search(number[j]) != -1){
+	count ++ 	
+  }  	
+}
+
+if (count == 3){
+	message = "You won";
+}
+else if(count == 2){
+    message = "You guessed 2 digits";		
+}
+else if (count < 2){
+    message = "You lose";	
+}
+console.log(message);
