@@ -64,3 +64,19 @@ else if (count < 2){
     message = "You lose";	
 }
 console.log(message);
+
+// задание 3 календарь
+var holidayCalendar = {
+	     "4/7/2019" : "Motherhood and Beauty Day (Armenia)"
+	     ,"4/9/2019" : "Day of National Unity (Georgia)"
+    }
+    ,today = new Date
+	,stoday = today.getMonth() +1
+      	      + "/"
+			  + today.getDate()
+			  + "/"
+			  + today.getFullYear()
+    ,message = ""
+	;
+message = holidayCalendar[stoday]? holidayCalendar[stoday] : "No Holiday";	  
+console.log(message);
