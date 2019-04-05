@@ -8,7 +8,7 @@ var array  = [1, 3, 5, -4, 8, 9, -8]
 			if (!(j%2))	{
 			result += array[i] + ", ";	
 			}				
-			j ++;
-}
+		j ++;
+    }
 	}
 console.log(result);
