@@ -71,11 +71,11 @@ var holidayCalendar = {
 	     ,"4/9/2019" : "Day of National Unity (Georgia)"
     }
     ,today = new Date
-	,stoday = today.getMonth() +1
+    ,stoday = today.getMonth() +1
       	      + "/"
-			  + today.getDate()
-			  + "/"
-			  + today.getFullYear()
+	      + today.getDate()
+	      + "/"
+	      + today.getFullYear()
     ,message = ""
 	;
 message = holidayCalendar[stoday]? holidayCalendar[stoday] : "No Holiday";	  
