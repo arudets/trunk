@@ -16,11 +16,7 @@ console.log(result);
 var pswdLength       = 8
     ,pswd            = ""
     ,randDiapasonNum = 0	
-    ,diapasons       = {
-	        0  : "number"
-	       ,1 : "capital letter"
-	       ,2 : "small letter"
-	    }
+    ,diapasons       = ["number", "capital letter", "small letter"]	
     ,sympols         = {
 	       "number"          : [48, 57]
 	       ,"capital letter" : [65, 90] 
