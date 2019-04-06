@@ -31,30 +31,35 @@ for(var i = 0; i < pswdLength; i ++){
 console.log("pswd:", pswd)
 
 // задание 2 лотерея
-var userAnswer = "835"
+var userAnswer = "583"
     ,m         = 0
-    ,n         = 9
-    ,number    = ""
-    ,count     = 0
+    ,n         = 9    
+    ,winNumber = ""    
     ;
 
-for(var i = 0; i < 3; i ++){
-  number = Math.floor(Math.random() * (n - m + 1)) + m ;
-  if(userAnswer.search(number) != -1){
-	count ++  	
-   }  
+for(var i = 0; i < 3; i ++){  
+  winNumber += Math.floor(Math.random() * (n - m + 1)) + m + ''; 
 }
 
-if (count == 3){
-	message = "You won";
+for(var j = 0; j < 3; j ++){
+	for(var k = 0;  k < userAnswer.length; k ++){		
+		if( winNumber[j] == userAnswer[k] ){		
+			userAnswer = userAnswer.replace(userAnswer[k], '');			
+			k ++ //continue	
+		}				
+	}
 }
-else if(count == 2){
-    message = "You guessed 2 digits";		
+
+if (userAnswer.length == 0){
+	message = "You won! " + "Win number = " + winNumber;
+}
+else if(userAnswer.length == 1){
+    message = "You guessed 2 digits! "  + "Win number = " + winNumber;		
 }
 else {
-    message = "You lose";	
+    message = "You lose( "  + "Win number = " + winNumber;	
 }
-console.log(message);
+console.log(message); 
 
 // задание 3 календарь
 var holidayCalendar = {
