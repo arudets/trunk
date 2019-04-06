@@ -45,7 +45,7 @@ for(var j = 0; j < 3; j ++){
 	for(var k = 0;  k < userAnswer.length; k ++){		
 		if( winNumber[j] == userAnswer[k] ){		
 			userAnswer = userAnswer.replace(userAnswer[k], '');			
-			k ++	
+			break;	
 		}				
 	}
 }
