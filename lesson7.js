@@ -58,12 +58,12 @@ var dataForCalculation = {
 		
 function getRollCount(dataForCalculation){
   var roomSquare   = (dataForCalculation["roomSizes"]["length"] + dataForCalculation["roomSizes"]["width"]) * dataForCalculation["hRoom"]
-	  ,windowSquare = dataForCalculation["windowSizes"]["length"] * dataForCalculation["windowSizes"]["width"]
-	  ,doorSquare   = dataForCalculation["doorSizes"]["length"] * dataForCalculation["doorSizes"]["width"]
-	  ,rollSquare = dataForCalculation["rollSizes"]["length"] * dataForCalculation["rollSizes"]["width"]
-	  ,squareForRoll = roomSquare - windowSquare - doorSquare	
-	  ,rollCount = squareForRoll/rollSquare
-	  ;
+      ,windowSquare = dataForCalculation["windowSizes"]["length"] * dataForCalculation["windowSizes"]["width"]
+      ,doorSquare   = dataForCalculation["doorSizes"]["length"] * dataForCalculation["doorSizes"]["width"]
+      ,rollSquare = dataForCalculation["rollSizes"]["length"] * dataForCalculation["rollSizes"]["width"]
+      ,squareForRoll = roomSquare - windowSquare - doorSquare	
+      ,rollCount = squareForRoll/rollSquare
+      ;
 	return rollCount.toFixed(0)
 }
 		
