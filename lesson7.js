@@ -41,19 +41,19 @@ var dataForCalculation = {
 			        "length"  : 10
 			        ,"width"  : 7
 		            } 
-	      ,"windowSizes" :{
-				     "length" : 2
+	      ,"windowSizes" : {
+				"length"  : 2
 			        ,"width"  : 1.5  
 		            }		  
 	      ,"doorSizes"   : {
-					"length"  : 2
+			        "length"  : 2
 			        ,"width"  : 1   
 		            }		  
-		  ,"rollSizes"   : {
-					"length"  : 2
+	      ,"rollSizes"   : {
+				"length"  : 2
 			        ,"width"  : 1    
 		            }
-		  ,"hRoom"       : 2.5
+	     ,"hRoom"       : 2.5
         }
 		
 function getRollCount(dataForCalculation){
