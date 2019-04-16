@@ -108,8 +108,7 @@ console.log (createMenu(menu, menuClass, subMenuClass));
 function getCreditSum(sum, period, interest){
    var credit_sum = 0;
    for (var i = 0; i < period ; i++){	
-      credit_sum += sum/period + (sum -(sum/period * i))*(interest/1200);
-      console.log("Ваш размер выплаты ", i+1 , " месяц = ", credit_sum.toFixed(2) )
+      credit_sum += sum/period + (sum -(sum/period * i))*(interest/1200);      
    }
   return credit_sum.toFixed(2)   
 }
