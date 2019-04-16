@@ -1,10 +1,10 @@
 // Коктейль
 
 var myCocktail= {
-    "name"	      : "Cocktail's Name"
-	  ,"className"  : "cocktail"
-	  ,"ingredient" : {
-		       "base"       : "Cocktail's Base"
+       "name"	     : "Cocktail's Name"
+       ,"className"  : "cocktail"
+       ,"ingredient" : {
+		 "base"       : "Cocktail's Base"
 	         ,"additives" : "Cocktail's Additives"
 	         ,"fruits"    : "Cocktail's Fruits"
 	         ,"alcohol"   : "Cocktail's Alcohol"
@@ -17,12 +17,12 @@ var myCocktail= {
 function createCocktail(myCocktail){
   var ingredients = ''
 	for (var key in myCocktail["ingredient"]){
-		 ingredients += "\n\t<p>" + myCocktail["ingredient"][key] + "</p>"	  	
+            ingredients += "\n\t<p>" + myCocktail["ingredient"][key] + "</p>"	  	
 	}
   cocktail = "<article class =\""+ myCocktail.className +"\">"
-	         + "\n\t<h2>"    + myCocktail.name + "</h2>"
-			     + ingredients
-			     + "\n</article>";
+	   + "\n\t<h2>"    + myCocktail.name + "</h2>"
+           + ingredients
+	   + "\n</article>";
   return cocktail
 }
 
@@ -47,8 +47,7 @@ var menu = {
 			     ,"about us sub menu item_2" : "About Us sub menu item_2"
 			     ,"about us sub menu item_3" : "About Us sub menu item_3"
 		        }
-	        }		
-	 
+	        }	 
 	,"services" : {
 		   "name"      : "Services"
 		   ,"sub menu" : {
@@ -67,7 +66,7 @@ var menu = {
 	        }		
    }
   ,menuClass = {
-    	 ul  : "menu"
+    	     ul  : "menu"
 	    ,li  : "menu_item"
 	    ,a   : "menu_link"
 	}	
@@ -87,15 +86,15 @@ function createMenu(menuData, menuClass, subMenuClass){
 				       + "</a>" 
 				       + "\n\t\t<ul class =\""+ subMenuClass.ul +"\">"				   
 				   
-	    for(var subMenuName in menuData[fileName]["sub menu"]){				   
-				 menuList += "\n\t\t\t<li class = \""+ subMenuClass.li + "\">"
-				          +"\n\t\t\t\t<a href =\"#" + subMenuName + "\" class =\"" + subMenuClass.a + "\">"
-		              + menuData[fileName]["sub menu"][subMenuName]
-					        + "</a>"
-					        + "\n\t\t\t</li>"
-		    }
-		menuList += "\n\t\t</ul>"
-				     +"\n\t</li>";
+	      for(var subMenuName in menuData[fileName]["sub menu"]){				   
+	          menuList += "\n\t\t\t<li class = \""+ subMenuClass.li + "\">"
+		           +"\n\t\t\t\t<a href =\"#" + subMenuName + "\" class =\"" + subMenuClass.a + "\">"
+		           + menuData[fileName]["sub menu"][subMenuName]
+		           + "</a>"
+			   + "\n\t\t\t</li>"
+	       }
+	      menuList += "\n\t\t</ul>"
+		       +"\n\t</li>";
 	 }	
 	menuList += "\n</ul>";	
 	return menuList
@@ -109,7 +108,7 @@ console.log (createMenu(menu, menuClass, subMenuClass));
 function getCreditSum(sum, period, interest){
    var credit_sum = 0;
    for (var i = 0; i < period ; i++){	
-	    credit_sum += sum/period + (sum -(sum/period * i))*(interest/1200);
+      credit_sum += sum/period + (sum -(sum/period * i))*(interest/1200);
       console.log("Ваш размер выплаты ", i+1 , " месяц = ", credit_sum.toFixed(2) )
    }
   return credit_sum.toFixed(2)   
