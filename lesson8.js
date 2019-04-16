@@ -83,8 +83,8 @@ function createMenu(menuData, menuClass, subMenuClass){
 		  menuList += "\n\t<li class = \""+ menuClass.li+ "\">"
 		           +"\n\t\t<a href =\"#" + fileName + "\" class =\"" + menuClass.a + "\">"
 		           + menuData[fileName]["name"]
-				       + "</a>" 
-				       + "\n\t\t<ul class =\""+ subMenuClass.ul +"\">"				   
+		           + "</a>" 
+		           + "\n\t\t<ul class =\""+ subMenuClass.ul +"\">"				   
 				   
 	      for(var subMenuName in menuData[fileName]["sub menu"]){				   
 	          menuList += "\n\t\t\t<li class = \""+ subMenuClass.li + "\">"
